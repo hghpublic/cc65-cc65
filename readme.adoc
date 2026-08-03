@@ -1,0 +1,65 @@
+= cc65
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+[IMPORTANT]
+====
+The commit history of this branch is volatile. +
+Rebasing and force pushing happens at will. +
+The commits in this branch mostly collect changes with a narrow scope. +
+They rarely document code evolution. +
+The history may be rewritten without notice.
+====
+
+== cc65
+
+https://github.com/cc65/cc65
+
+https://github.com/hghpublic/cc65-cc65
+
+https://cc65.github.io/
+
+
+== build `.prg` files
+
+[source, bash]
+----
+cl65 -t c64 -O main.c -o test.prg
+----
+
+== start `.prg` file in VICE emulator
+
+[source, bash]
+----
+x64sc test.prg
+scrot -u test.png
+----
+
+== Ubuntu
+
+----
+sudo apt install cc65
+sudo apt install vice
+----
+
+----
+cc65 --version       
+cc65 V2.18 - Ubuntu 2.19-2build1
+
+x64sc --version
+x64sc (VICE 3.9)
+
+VICE system file search path: '/home/vscode/.local/share/vice:/usr/bin:/usr/share/vice'.
+----
+
+== Stash
+
+=== Revamped Online Retro Programming IDE: Now Featuring BBC CC65, C64 BASIC, and Vic 20!
+
+https://www.retro8bitshop.com/revamped-online-retro-programming-ide-now-featuring-bbc-cc65-c64-basic-and-vic-20/
+
+https://ide.retrogamecoders.com/
