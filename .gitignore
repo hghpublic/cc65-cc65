@@ -10,3 +10,8 @@
 /util/atari/*.exe
 /util/gamate/*.exe
 
+# macos
+.DS_Store
+
+# cmake
+build/
